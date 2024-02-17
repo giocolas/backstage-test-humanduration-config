@@ -33,6 +33,7 @@ import { AppRouter, FlatRoutes } from '@backstage/core-app-api';
 import { CatalogGraphPage } from '@backstage/plugin-catalog-graph';
 import { RequirePermission } from '@backstage/plugin-permission-react';
 import { catalogEntityCreatePermission } from '@backstage/plugin-catalog-common/alpha';
+import { TestHumandurationConfigPage } from '@internal/plugin-test-humanduration-config';
 
 const app = createApp({
   apis,
@@ -93,6 +94,7 @@ const routes = (
     </Route>
     <Route path="/settings" element={<UserSettingsPage />} />
     <Route path="/catalog-graph" element={<CatalogGraphPage />} />
+    <Route path="/test" element={<TestHumandurationConfigPage />} />
   </FlatRoutes>
 );
 

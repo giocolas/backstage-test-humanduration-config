@@ -101,3 +101,7 @@ catalog:
     #   target: https://github.com/backstage/backstage/blob/master/packages/catalog-model/examples/acme-corp.yaml
     #   rules:
     #     - allow: [User, Group]
+
+test:
+  normalParameter: 'this is an example string value'
+  humanDurationParameter: { days: 1 }

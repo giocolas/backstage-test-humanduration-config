@@ -26,6 +26,7 @@ import {
 } from '@backstage/core-components';
 import MenuIcon from '@material-ui/icons/Menu';
 import SearchIcon from '@material-ui/icons/Search';
+import CloudIcon from '@material-ui/icons/Cloud';
 
 const useSidebarLogoStyles = makeStyles({
   root: {
@@ -74,6 +75,7 @@ export const Root = ({ children }: PropsWithChildren<{}>) => (
         <SidebarScrollWrapper>
           <SidebarItem icon={MapIcon} to="tech-radar" text="Tech Radar" />
         </SidebarScrollWrapper>
+        <SidebarItem icon={CloudIcon} to="test" text="Test" />
       </SidebarGroup>
       <SidebarSpace />
       <SidebarDivider />
